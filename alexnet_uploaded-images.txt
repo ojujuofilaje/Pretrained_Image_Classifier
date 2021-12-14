@@ -1,0 +1,83 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 5 key-value pairs.
+Below are 5 of them:
+ 1 key:                   Phone_01.jpg  label:                      phone
+ 2 key:                  Banana_01.jpg  label:                     banana
+ 3 key:                Squirrel_01.jpg  label:                   squirrel
+ 4 key:                     Dog_02.jpg  label:                        dog
+ 5 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+                 Banana_01.jpg: 
+Real:                     banana   Classifier:                         banana
+
+               Squirrel_01.jpg: 
+Real:                   squirrel   Classifier: fox squirrel, eastern fox squirrel, sciurus niger
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
+
+ NOT A MATCH:
+
+                  Phone_01.jpg: 
+Real:                      phone   Classifier: switch, electric switch, electrical switch
+
+# Total Images 5 # Matches: 4 # NOT Matches: 1
+
+     MATCH:
+
+                 Banana_01.jpg: 
+Real:                     banana   Classifier:                         banana  
+PetLabelDog: 0  ClassLabelDog: 0
+
+               Squirrel_01.jpg: 
+Real:                   squirrel   Classifier: fox squirrel, eastern fox squirrel, sciurus niger  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                  Phone_01.jpg: 
+Real:                      phone   Classifier: switch, electric switch, electrical switch  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 5 # Matches: 4 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  5  N Dog Images:  2  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  5  N Dog Images:  2  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+The CNN model architecture being used is alexnet
+Number of images: 5
+Number of dog images: 2
+Number of "not-a" dog images: 3
+% Match:80.0
+
+% Correct Dogs:100.0
+
+% Correct Breed:100.0
+
+% "Not-A" Dog:100.0
+
+There are either no misclassified dogs or user does not want to print misclassifications
+There are either no misclassified breeds or user does not want to print misclassifications
+
+** Total Elapsed Runtime: 0:0:0
