@@ -76,7 +76,7 @@ def adjust_results4_isadog(results_dic, dogfile):
                 pass
             else:
                 dognameslist.append(x)
-     
+    #check if pet and classifier label is a dog 
     for key,value in results_dic.items():
         #check that pet label is a dog
         if value[0] in dognameslist:
